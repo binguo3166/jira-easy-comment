@@ -1,0 +1,25 @@
+{
+  "key": "${addon.key}",
+  "baseUrl": "${addon.base-url}",
+  "name": "Easy Comment",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "scopes": ["READ"],
+  "modules": {
+    "generalPages": [
+      {
+        "key": "comment-management-page",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Easy Comment"
+        },
+        "url": "/comment-management"
+      }
+    ]
+  }
+}
